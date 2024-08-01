@@ -1,6 +1,15 @@
 package main
+
 import "fmt"
 
-func main(){
-	
+func main() {
+    m := map[string]int{
+        "a": 1,
+        "b": 2,
+        "c": 3,
+    }
+
+    for key, value := range m {
+        fmt.Printf("Key: %s, Value: %d\n", key, value)
+    }
 }
